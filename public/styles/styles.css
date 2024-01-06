@@ -160,11 +160,6 @@ img:hover {
       width:40px;
     }
   }
-
-img {
-  max-width: 300px;
-  max-height: 300px;
-}
   
 .image {
   max-width: 100%;
@@ -224,7 +219,7 @@ img {
 .sm-container img {
   display: block;
   margin: 0 auto;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
