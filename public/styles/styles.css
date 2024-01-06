@@ -247,7 +247,7 @@ button {
   background-color: #6A704C;
   color: #f2f2f2;
   display: block;
-  margin: 5% 3%;
+  margin: auto;
   cursor: pointer;
 
 }
@@ -255,6 +255,7 @@ button {
 .edit-btn {
   display: inline-block;
   text-align: center;
+  margin: 5% 3%;
 }
 
 button:hover {
