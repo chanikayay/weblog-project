@@ -269,6 +269,7 @@ button {
 
 .edit-btn {
   display: inline-block;
+  margin: 0.67em;
 }
 
 button:hover {
