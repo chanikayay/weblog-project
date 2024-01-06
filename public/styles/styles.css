@@ -125,7 +125,6 @@ img:hover {
     .sm-container {
       padding: 0;
       max-width: 300px;
-      max-height: 300px;
     }  
   
     h2, h3 {
@@ -197,14 +196,6 @@ img:hover {
   grid-gap: 16px;
   margin: 0 0 50px 0;
 }
-
-  @media (min-width: 800px) {
-    .wrapper {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 40px;
-    }
-  }
   
 .wrapper h3 {
   font-size: 1.5em;
