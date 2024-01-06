@@ -252,10 +252,13 @@ button {
 
 }
 
+.edit-btn.container {
+  margin: 5% 3%;
+  text-align: center;
+}
+
 .edit-btn {
   display: inline-block;
-  text-align: center;
-  margin: 5% 3%;
 }
 
 button:hover {
