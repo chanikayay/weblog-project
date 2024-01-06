@@ -133,7 +133,7 @@ img:hover {
     }
   
     h1 {
-      font-size: 1em;
+      font-size: 1.4rem;
     }
   
     .latest-post > .text-container {
@@ -160,6 +160,11 @@ img:hover {
       width:40px;
     }
   }
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
   
 .image {
   max-width: 100%;
