@@ -1,0 +1,49 @@
+<%- include ("partials/boilerplate") %>
+    <title>Home</title>
+<%- include ("partials/header") %>
+
+<div class="contents">
+    <div style="text-align: center;">    
+        <picture>
+            <source media="(max-width: 900px)" srcset="images/study-sm.png" width="400">
+            <img src="images/study.png" class="banner" style="margin: 0;" alt="study a day blog: a blog where we suffer together">
+        </picture>  
+    </div>        
+ 
+            <% posts.reverse().forEach((post, index) => { %>
+                    <% if (index === 0) { %>
+                        <div class="post latest-post">
+                            <div class="text-container">
+                                <a class="title big" style="text-align: left;" href="<%= post.pathName %>"><h1><%= post.title %></h1></a>
+            <h2 class="content-big"><%= post.truncatedDescription %></h2>
+            <div class="more-time">
+                <i><%= post.dateTime %></i>
+            </div>
+        </div>
+        <div class="image">
+            <a href="<%= post.pathName %>"><img src="<%= post.imageURL %>"></a>
+        </div>
+    </div> 
+
+    <h1 style="margin-top: 60px;">Other Posts</h1>
+    
+    <div class="wrapper">
+        <% } else { %>
+            <div class="post">
+                <div class="sm-container">
+                    <a href="<%= post.pathName %>"><img src="<%= post.imageURL %>"></a>
+                    <div class="content">
+                        <a href="<%= post.pathName %>"><h3><%= post.title  %></h3></a>
+                        <div class="more-time">
+                            <i class="more-time"><%= post.dateTime %></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    <% }) %>
+        </div>
+</div>
+
+<%- include("./partials/footer.ejs") %>
+

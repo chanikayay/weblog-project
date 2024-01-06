@@ -1,0 +1,24 @@
+<%- include ("partials/boilerplate") %>
+    <title>Create a Post</title>
+<%- include ("partials/header") %>
+
+  <div class="contents">
+
+    <h1 style="text-align: center;">Submit a Post</h1>
+
+    <form action="/submit" method="post">
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="imageURL">GIF or Image URL:</label>
+      <input type="url" id="imageURL" name="imageURL" required>
+
+      <button type="submit">Submit Post</button>
+    </form>
+
+  </div>
+
+<%- include("./partials/footer.ejs") %>

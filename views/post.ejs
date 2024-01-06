@@ -1,0 +1,14 @@
+<%- include ("partials/boilerplate") %>
+    <title><%=post.title%></title>
+<%- include ("partials/header") %>
+    <div class="contents">
+    <img class="blog-img" src="<%= post.imageURL %>" alt="Post Image">
+    <h1 style="text-align: center;"><%= post.title %></h1>
+    <i style="display:block; text-align: center; font-size: 1.5rem;" class="more-time">Last Updated: <%= post.dateTime %></i>
+    <h2 style="text-align: center; margin: 3%;"><%= post.description %></h2>
+    <a href="/<%= post.pathName %>/edit"><button>Edit</button></a>
+</div>
+</body>
+</html>
+
+<%- include("partials/footer") %> 
